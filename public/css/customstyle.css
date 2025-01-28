@@ -1,0 +1,19 @@
+.editInput {
+	height: 40px;
+	width: 50%;
+	background-color: #0D0D0D;
+	border: 0;
+	color: #ccc;
+	padding: 11px;
+}
+.rptBox {
+	padding: 8px;
+	margin: 4px;
+}
+.table.editProduct td img {
+	border-radius: 0;
+	margin: 6px;
+}
+#blogContent{
+	min-height: 200px;
+}
