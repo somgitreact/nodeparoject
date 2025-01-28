@@ -1,0 +1,39 @@
+doctype html
+head
+  title plantpre
+  link(rel='stylesheet' href='/vendors/mdi/css/materialdesignicons.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/themify-icons.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/vendor.bundle.base.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/font-awesome.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/jquery-jvectormap.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/flag-icons.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/owl.carousel.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='/css/style.css')
+  link(rel='stylesheet' href='/css/customstyle.css')
+  link(rel='shortcut icon' href='/images/favicon.png')
+
+body 
+  .container-scroller
+
+    include _side
+
+    .container-fluid.page-body-wrapper 
+
+      include _header
+
+      .main-panel
+        .content-wrapper
+
+          block content
+           h1 This is DashBoard
+           p see left menu
+
+        include _footer
+
+  script( src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+  script( src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js")
+
+  script( src="/js/formsubmit.js")
+  script( src="/js/file-upload.js")
+  script( src="/js/custom.js")

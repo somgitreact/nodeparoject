@@ -1,0 +1,81 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "08ecc874-7b14-420c-8ceb-7d5001615edb",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1731173112251"
+        }
+      },
+      "favorite": {
+        "name": "clusternature.sh55d.mongodb.net"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://graphicsom:8nvvt5ogg2vSzhug@clusternature.sh55d.mongodb.net/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    },
+    {
+      "id": "7586ea5f-5a1f-4299-8958-4774afa5f33f",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1734340965096"
+        }
+      },
+      "favorite": {
+        "name": "somtour",
+        "color": "color1"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    },
+    {
+      "id": "7f6c1f3b-f734-4e2f-875c-02601426bf8f",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1731151054833"
+        }
+      },
+      "favorite": {
+        "name": "cluster0.a6bvh.mongodb.net"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://graphicsom:rz2GzHbzYwQ5Gwf5@cluster0.a6bvh.mongodb.net/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    },
+    {
+      "id": "b97ac528-7752-4a34-afe2-6ee765581747",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1732174134434"
+        }
+      },
+      "favorite": {
+        "name": ""
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}

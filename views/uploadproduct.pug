@@ -1,0 +1,120 @@
+extend base
+
+block content
+
+  .page-header
+    h3.page-title  Create Product  
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='#') Forms
+        li.breadcrumb-item.active(aria-current='page') use form to sign up this site
+  .row.justify-content-center
+    .col-md-6.grid-margin.stretch-card
+      .card
+        .card-body
+
+          form.forms-sample(action='/backend/uploadedprodata' method='POST' enctype='multipart/form-data')
+
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') name
+              .col-sm-9
+                input.form-control(type='text' name='name' placeholder='name')
+            .form-group.row
+              label.col-sm-3.col-form-label Type
+              .col-sm-9
+                select.form-select(style='border-radius: 0;')
+                  option(value='mango') mango
+                  option(value='lichu') lichu
+                  option(value='berry') berry
+                  option(value='other') other
+            .form-group.row
+              label.col-sm-3.col-form-label category *
+              .col-sm-9
+                select.form-select(style='border-radius: 0;')
+                  option(value='Fruits') Fruits
+                  option(value='Herbs') Herbs
+                  option(value='Medicine') Medicine
+                  option(value='Fern') Fern
+                  option(value='Other') Other
+            //- .form-group.row
+            //-   label.col-sm-3.col-form-label Upload main Image (single Image)
+            //-   input.file-upload-default(type='file' name='imgmain[]')
+            //-   .col-sm-9.d-flex.align-items-center
+            //-     input.form-control.file-upload-info(type='text' disabled='' placeholder='Upload Image')
+            //-     span.input-group-append.ms-2
+            //-       button.file-upload-browse.btn.btn-primary(type='button') Upload main image
+            //- .form-group.row
+            //-   label.col-sm-3.col-form-label gallery Image (multiple)
+            //-   input.file-upload-default(type='file' name='imgmain[]')
+            //-   .col-sm-9.d-flex.align-items-center
+            //-     input.form-control.file-upload-info(type='text' disabled='' placeholder='Upload Image')
+            //-     span.input-group-append.ms-2
+            //-       button.file-upload-browse.btn.btn-primary(type='button') Upload main image
+
+            .form-group.row
+              label.col-sm-3.col-form-label Upload Main Image
+              input.file-upload-default(type='file' name='mainImg' accept='image/*')
+              .col-sm-9.d-flex.align-items-center
+                input.form-control.file-upload-info(type='text' disabled placeholder='Upload Image')
+                span.input-group-append.ms-2
+                  button.file-upload-browse.btn.btn-primary(type='button') Upload Main Image
+
+            .form-group.row
+              label.col-sm-3.col-form-label Gallery Images
+              input.file-upload-default(type='file' name='relatedImages' multiple accept='image/*')
+              .col-sm-9.d-flex.align-items-center
+                input.form-control.file-upload-info(type='text' disabled placeholder='Upload Gallery Images')
+                span.input-group-append.ms-2
+                  button.file-upload-browse.btn.btn-primary(type='button') Upload Gallery Images
+
+
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') Price *
+              .col-sm-9
+                input.form-control(type='text' name='price' placeholder='Price')
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') Price discount
+              .col-sm-9
+                input.form-control(type='text' name='priceDiscount' placeholder='Price')
+            .form-group.row
+              label.col-sm-3(for='exampleFormControlTextarea1') Description
+              .col-sm-9
+                textarea#exampleFormControlTextarea1.form-control(name='details' rows='3')
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') Locaion
+              .col-sm-9
+                input.form-control(type='text' name='Locaion' placeholder='use lat and lang with coma between')
+
+            .wrapArray
+              .form-group.row
+                label.col-sm-3.col-form-label(for='exampleInputUsername2') Care Tips
+                .col-sm-9
+                  .wrptips
+                    .rptBox.border.border-dark-subtle
+                      input.form-control.mb-2(type='text' name='tips-1' placeholder='careTips')
+
+                      button#add-1.btn.btn-primary.me-2.add add new field
+
+
+            .form-group.row
+              label.col-sm-3(for='exampleFormControlTextarea12') Additional Info
+              .col-sm-9
+                textarea#exampleFormControlTextarea12.form-control(name='additionalInfo' rows='3')
+            //- .form-group.row
+            //-   label.col-sm-3.col-form-label(for='exampleInputUsername2') Faq
+            //-   .col-sm-9
+            //-     input.form-control(type='text' name='faq' placeholder='faq')
+
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') Faq
+              .col-sm-9
+                .wrpdocument
+                  .rptBox.border.border-dark-subtle
+                    input.form-control.mb-2(type='text' name='careQ-1' placeholder='add questation')
+                    input.form-control.mb-2(type='text' name='careA-1' placeholder='add answer')
+                    button#add-1.btn.btn-primary.me-2.add add new field  
+
+            button.btn.btn-primary.me-2 Submit
+
+            button.btn.btn-dark Cancel

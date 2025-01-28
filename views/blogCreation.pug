@@ -1,0 +1,46 @@
+extend base
+
+block content
+
+  .page-header
+    h3.page-title  sign up Form  
+    nav(aria-label='breadcrumb')
+      ol.breadcrumb
+        li.breadcrumb-item
+          a(href='#') Forms
+        li.breadcrumb-item.active(aria-current='page') use form to sign up this site
+  .row.justify-content-center
+    .col-md-6.grid-margin.stretch-card
+      .card
+        .card-body
+
+          form.forms-sample(action='/blogadmin/createblog' method='POST' enctype="multipart/form-data" )
+
+            .form-group.row
+              label.col-sm-3.col-form-label(for='exampleInputUsername2') Title
+              .col-sm-9
+                input.form-control(type='text' name='title' placeholder='Title')
+
+            .form-group.row
+              label.col-sm-3.col-form-label Upload  Image
+              input.file-upload-default(type='file' name='blogImg' multiple accept='image/*')
+              .col-sm-9.d-flex.align-items-center
+                input.form-control.file-upload-info(type='text' disabled placeholder='Upload Image')
+                span.input-group-append.ms-2
+                  button.file-upload-browse.btn.btn-primary(type='button') Upload  Image
+
+            .form-group.row
+              label.col-sm-3(for='blogContent') Blog Content
+              .col-sm-9
+                textarea#blogContent.form-control(name='description' rows='3')
+
+
+            button.btn.btn-primary.me-2 Submit
+
+            button.btn.btn-dark Cancel
+
+
+
+
+
+//- enctype='application/x-www-form-urlencoded'

@@ -1,0 +1,15 @@
+extends base
+
+block content
+  main.main
+    .error
+     
+      h1 Oops! #{message}
+      p Message: #{message}
+      if error.stack
+        pre #{error.stack}
+      a(href='/') Go back to Home 
+      .error__title
+        h2.heading-secondary.heading-secondary--error Uh oh! Something went wrong!   
+        h2.error__emoji 😢 🤯
+      .error__msg= message

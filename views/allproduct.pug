@@ -1,0 +1,85 @@
+extend base
+
+block content
+
+  h1 All Product
+  span= `product ---------` 
+
+  .col-lg-6.grid-margin.stretch-card
+  .card
+    .card-body
+      h4.card-title Hoverable Table
+      p.card-description
+        | Add class 
+        code .table-hover
+      .table-responsive
+        table.table.table-hover
+          thead
+            tr
+              th id
+              th name
+              th Edit
+              th Delete
+          tbody#repetedtr
+
+
+
+
+
+  script( src="/js/viewsRealted.js")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- tr
+    //-   td=`Type`
+    //-   td=`${data.type}`
+    //- tr
+    //-   td=`Category`
+    //-   td=`${data.category}`
+    //- tr
+    //-   td=`Price`
+    //-   td=`${data.price}`
+    //- tr
+    //-   td=`PriceDiscount`
+    //-   td=`${data.priceDiscount}`
+    //- tr
+    //-   td=`Description`
+    //-   td=`${data.description}`
+    //- tr
+    //-   td=`Location`
+    //-   td=`${data.location}`
+    //- tr
+    //-   td=`CareTips`
+    //-   td=`${data.careTips}`
+    //- tr
+    //-   td=`AdditionalInfo`
+    //-   td=`${data.additionalInfo}`
+    //- tr
+    //-   td=`Faq`
+    //-   td 
+    //-     each fa in data.faq 
+    //-       span.d-block.m-2= `${fa.Q} : ${fa.A} --- ` 
+    //- tr
+    //-   td=`MainImg`
+    //-   td
+    //-     img(src=`/public/images/${data.mainImg}`) 
+    //- tr
+    //-   td=`RelatedImages`
+    //-   td=`${data.relatedImages}`  
+
+
+
+
+
+

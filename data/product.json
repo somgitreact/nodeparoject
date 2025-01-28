@@ -1,0 +1,304 @@
+[
+    {
+        "name": "golop kahas amm",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 35,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.632275, 88.374408],
+    "address": "Baranagar, Kolkata, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+
+      {
+        "name": "ganda kahas lichu",
+"type": "lichu",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 25,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.486912, 88.221116],
+    "address": "Gumar Gala, Maheshtala, West Bengal 700137"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "malda amm ",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 45,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.618505, 88.668647],
+    "address": "Champatala, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "fazli amm ",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 50,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.646518, 88.061137],
+    "address": "Bhetkepara, Narendrapur, West Bengal 711410"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "fazli lichu ",
+"type": "lichu",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 42,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.707271, 88.099717],
+    "address": "Jagatballavpur, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "fazli lichu 222",
+"type": "lichu",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 40,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.258376, 88.061020],
+    "address": "Sibganja, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "hybrid mango",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 40,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [22.697239, 88.842703],
+    "address": "Punra P, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "hybrid mango",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 40,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [23.181104, 87.867974],
+    "address": "Belshar, West Bengal 713103"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "hybrid berry ",
+"type": "berry",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 40,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [23.328988, 87.035637],
+    "address": "Bankura, West Bengal"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "hybrid berry new ",
+"type": "berry",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 40,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "West Bengal",
+    "type": "Point",
+    "coordinates": [24.319002, 88.261904],
+    "address": "Lalbag, West Benga"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "new berry new ",
+"type": "berry",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 43,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "Jharkhand",
+    "type": "Point",
+    "coordinates": [24.319002, 88.261904],
+    "address": "Pakuria, Jharkhand"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      },
+      {
+        "name": "new mango new ",
+"type": "mango",
+"category": "Fruits",
+"mainImg": "fdsffds.jpg",
+"relatedImages": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+"price": 43,
+"details": "ff sff sfs ddf dfdf ddf ffd",
+"proLocation": {
+    "description": "Jharkhand",
+    "type": "Point",
+    "coordinates": [22.226275, 85.967383],
+    "address": "Kumardungi, Jharkhand"
+  },
+"careTips": [
+    {"tips": "ggffd fgg gf gdfg"},
+    {"tips": "ggffd fgg gf gdfg22"},
+    {"tips": "ggffd fgg gf gdfg333"}
+],
+"faq": [
+    {"qus": "ggffd fgg gf gdfg?" , "ans": "ksdgsa ka ysa i oyfuif  ifi"},
+    {"qus": "ggffd fgg gf gdfg2?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 22"},
+    {"qus": "ggffd fgg gf gdfg3?" , "ans": "ksdgsa ka ysa i oyfuif  ifi 333"}
+]
+      }
+
+]

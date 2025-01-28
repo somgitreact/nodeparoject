@@ -1,0 +1,129 @@
+nav.navbar.p-0.fixed-top.d-flex.flex-row
+  .navbar-brand-wrapper.d-flex.d-lg-none.align-items-center.justify-content-center
+    a.navbar-brand.brand-logo-mini(href='../../index.html')
+      img(src='../../../assets/images/logo-mini.svg' alt='logo')
+  .navbar-menu-wrapper.flex-grow.d-flex.align-items-stretch
+    button.navbar-toggler.navbar-toggler.align-self-center(type='button' data-toggle='minimize')
+      span.mdi.mdi-menu
+    ul.navbar-nav.w-100
+      li.nav-item.w-100
+        form.nav-link.mt-2.mt-md-0.d-none.d-lg-flex.search
+          input.form-control(type='text' placeholder='Search products')
+    ul.navbar-nav.navbar-nav-right
+      li.nav-item.dropdown.d-none.d-lg-block
+        a#createbuttonDropdown.nav-link.btn.btn-success.create-new-button(data-bs-toggle='dropdown' aria-expanded='false' href='#') + Create New Project
+        .dropdown-menu.dropdown-menu-end.navbar-dropdown.preview-list(aria-labelledby='createbuttonDropdown')
+          h6.p-3.mb-0 Projects
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-file-outline.text-primary
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 Software Development
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-web.text-info
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 UI Development
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-layers.text-danger
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 Software Testing
+          .dropdown-divider
+          p.p-3.mb-0.text-center See all projects
+      li.nav-item.nav-settings.d-none.d-lg-block
+        a.nav-link(href='#')
+          i.mdi.mdi-view-grid
+      li.nav-item.dropdown.border-left
+        a#messageDropdown.nav-link.count-indicator.dropdown-toggle(href='#' data-bs-toggle='dropdown' aria-expanded='false')
+          i.mdi.mdi-email
+          span.count.bg-success
+        .dropdown-menu.dropdown-menu-end.navbar-dropdown.preview-list(aria-labelledby='messageDropdown')
+          h6.p-3.mb-0 Messages
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              img.rounded-circle.profile-pic(src='../../../assets/images/faces/face4.jpg' alt='image')
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 Mark send you a message
+              p.text-muted.mb-0  1 Minutes ago 
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              img.rounded-circle.profile-pic(src='../../../assets/images/faces/face2.jpg' alt='image')
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 Cregh send you a message
+              p.text-muted.mb-0  15 Minutes ago 
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              img.rounded-circle.profile-pic(src='../../../assets/images/faces/face3.jpg' alt='image')
+            .preview-item-content
+              p.preview-subject.ellipsis.mb-1 Profile picture updated
+              p.text-muted.mb-0  18 Minutes ago 
+          .dropdown-divider
+          p.p-3.mb-0.text-center 4 new messages
+      li.nav-item.dropdown.border-left
+        a#notificationDropdown.nav-link.count-indicator.dropdown-toggle(href='#' data-bs-toggle='dropdown')
+          i.mdi.mdi-bell
+          span.count.bg-danger
+        .dropdown-menu.dropdown-menu-end.navbar-dropdown.preview-list(aria-labelledby='notificationDropdown')
+          h6.p-3.mb-0 Notifications
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-calendar.text-success
+            .preview-item-content
+              p.preview-subject.mb-1 Event today
+              p.text-muted.ellipsis.mb-0  Just a reminder that you have an event today 
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-cog.text-danger
+            .preview-item-content
+              p.preview-subject.mb-1 Settings
+              p.text-muted.ellipsis.mb-0  Update dashboard 
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-link-variant.text-warning
+            .preview-item-content
+              p.preview-subject.mb-1 Launch Admin
+              p.text-muted.ellipsis.mb-0  New admin wow! 
+          .dropdown-divider
+          p.p-3.mb-0.text-center See all notifications
+      li.nav-item.dropdown
+        a#profileDropdown.nav-link(href='#' data-bs-toggle='dropdown')
+          .navbar-profile
+            img.img-xs.rounded-circle(src='../../../assets/images/faces/face15.jpg' alt='')
+            p.mb-0.d-none.d-sm-block.navbar-profile-name Henry Klein
+            i.mdi.mdi-menu-down.d-none.d-sm-block
+        .dropdown-menu.dropdown-menu-end.navbar-dropdown.preview-list(aria-labelledby='profileDropdown')
+          h6.p-3.mb-0 Profile
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-cog.text-success
+            .preview-item-content
+              p.preview-subject.mb-1 Settings
+          .dropdown-divider
+          a.dropdown-item.preview-item
+            .preview-thumbnail
+              .preview-icon.bg-dark.rounded-circle
+                i.mdi.mdi-logout.text-danger
+            .preview-item-content
+              p.preview-subject.mb-1 Log out
+          .dropdown-divider
+          p.p-3.mb-0.text-center Advanced settings
+    button.navbar-toggler.navbar-toggler-right.d-lg-none.align-self-center(type='button' data-toggle='offcanvas')
+      span.mdi.mdi-format-line-spacing

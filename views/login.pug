@@ -1,0 +1,104 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  title plantpre
+  link(rel='stylesheet' href='/vendors/mdi/css/materialdesignicons.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/themify-icons.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/vendor.bundle.base.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/font-awesome.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/jquery-jvectormap.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/flag-icons.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/owl.carousel.min.css')
+  link(rel='stylesheet' href='/vendors/mdi/css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='/css/style.css')
+  link(rel='stylesheet' href='/css/customstyle.css')
+  link(rel='shortcut icon' href='/images/favicon.png')
+
+body
+  .container-scroller
+    .container-fluid.page-body-wrapper.full-page-wrapper
+      .row.w-100
+        .content-wrapper.full-page-wrapper.d-flex.align-items-center.auth.login-bg
+          .card.col-lg-4.mx-auto
+            .card-body.px-5.py-5
+              h3.card-title.text-start.mb-3 Login
+              form
+                .form-group
+                  label(for='exampleInputEmail1') Email address
+                  input#exampleInputEmail1.form-control(type='email' placeholder='Email', name= "email")
+                .form-group
+                  label(for='exampleInputPassword1') Password
+                  input#exampleInputPassword1.form-control(type='password' placeholder='Password' name="password")
+                .form-group.d-flex.align-items-center.justify-content-between
+                  .form-check
+                    label.form-check-label
+                      input.form-check-input(type='checkbox')
+                      |  Remember me 
+                      i.input-helper
+                  a.forgot-pass(href='#') Forgot password
+                .text-center.d-grid.gap-2
+                  //button.btn.btn-primary.btn-block.enter-btn(type='submit') Login
+                  button#login.btn.btn-block.btn-primary.me-2.enter-btn(type='submit') Submit
+                .d-flex
+                  button.btn.btn-facebook.me-2.col
+                    i.mdi.mdi-facebook
+                    |  Facebook
+                  button.btn.btn-google.col
+                    i.mdi.mdi-google-plus
+                    |  Google plus
+                p.sign-up
+                  | Don&apos;t have an Account?
+                  a(href='http://127.0.0.1:5000/signup')  Sign Up
+  script( src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+  script( src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js")
+  script( src="/js/formsubmit.js")                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- extend base
+
+//- block content
+
+//-   .page-header
+//-     h3.page-title  sign up Form  
+//-     nav(aria-label='breadcrumb')
+//-       ol.breadcrumb
+//-         li.breadcrumb-item
+//-           a(href='#') Forms
+//-         li.breadcrumb-item.active(aria-current='page') use form to sign up this site
+//-   .row.justify-content-center
+//-     .col-md-6.grid-margin.stretch-card
+//-       .card
+//-         .card-body
+
+//-           form.forms-sample
+
+//-             .form-group
+//-               label(for='exampleInputEmail1') Email address
+//-               input#exampleInputEmail1.form-control(type='email' placeholder='Email', name= "email")
+//-             .form-group
+//-               label(for='exampleInputPassword1') Password
+//-               input#exampleInputPassword1.form-control(type='password' placeholder='Password' name="password")
+
+//-             .form-check.form-check-flat.form-check-primary
+//-               label.form-check-label
+//-                 input.form-check-input(type='checkbox')
+//-                 |  Remember me 
+//-                 i.input-helper
+//-             button#login.btn.btn-primary.me-2(type='submit') Submit
+//-             button.btn.btn-dark Cancel

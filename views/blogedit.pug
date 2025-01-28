@@ -1,0 +1,125 @@
+extend base
+
+block content
+
+  h1 uploaded seccess 
+    span= `${data.name} product ---------` 
+
+  .col-lg-6.grid-margin.stretch-card
+  .card
+    .card-body
+      h4.card-title Hoverable Table
+      p.card-description
+        | Add class 
+        code .table-hover
+      .table-responsive
+        form.forms-sample(action=`/backend/editsave/${data._id}` method='POST' enctype='multipart/form-data')
+          table.table.table-hover.editProduct
+            thead
+              tr
+                th=`key ${data._id}`
+                th description
+            tbody
+
+
+              input(type='hidden' name='deletedImages' value='[]')
+
+              tr
+                td=`Name`
+                td
+                  input.editInput(type='text' name='name' value=`${data.name}`)
+              tr
+                td=`Type`
+                td
+                  input.editInput(type='text' name='type' value=`${data.type}`)
+              tr
+                td=`Category`
+                td
+                  input.editInput(type='text' name='category' value=`${data.category}`)
+              tr
+                td=`Price`
+                td
+                  input.editInput(type='text' name='price' value=`${data.price}`)
+              tr
+                td=`PriceDiscount`
+                td
+                  input.editInput(type='text' name='priceDiscount' value=`${data.priceDiscount}`)
+              tr
+                td=`Description`
+                td
+                  input.editInput(type='text' name='description' value=`${data.description}`)
+              tr
+                td=`Location`
+                td
+                  input.editInput(type='text' name='location' value=`${data.location}`)
+
+              tr
+                td=`CareTips`
+                td
+                  .wrapArray
+                    .wrptips
+                      each tip, index in data.careTips
+                        .rptBox.border.border-dark-subtle
+                          input.form-control.mb-2(type='text' name=`tips-${index+1}` value=`${tip}` placeholder='Care Tips')
+                          button.btn.btn-danger.me-2.delete(id=`del-${index+1}`) Delete Field
+                          if index === data.careTips.length - 1
+                            button.btn.btn-primary.me-2.add(id=`add-${index + 1}`) Add New Field
+
+              tr
+                td=`AdditionalInfo`
+                td
+                  input.editInput(type='text' name='additionalInfo' value=`${data.additionalInfo}`)
+
+              tr
+                td=`Faq`
+                td
+                  .wrapArray
+                    .wrpdocument
+                      each fa, index in data.faq
+                        .rptBox.border.border-dark-subtle
+                          input.form-control.mb-2(type='text' name=`careQ-${index+1}` value=`${fa.Q}` placeholder='Add Question')
+                          input.form-control.mb-2(type='text' name=`careA-${index+1}` value=`${fa.A}` placeholder='Add Answer')
+                          button.btn.btn-danger.me-2.delete(id=`del-${index+1}`) Delete Field
+                          if index === data.faq.length - 1
+                            button.btn.btn-primary.me-2.add(id=`add-${index + 1}`) Add New Field
+
+              tr
+                td=`Main Image`
+                td
+                  //- img(src=`/images/${data.mainImg}` style='max-width: 200px;')
+                  //- input.file-upload-default(type='file' name='mainImg'  accept='image/*')
+
+                  .d-flex.align-items-center.mb-2
+                    img(src=`/images/${data.mainImg}` class='me-2' style='width: 100px; height: 100px; object-fit: cover;')
+                    button.btn.btn-danger.btn-sm.delete-image(data-image=`${data.mainImg}`) Delete
+                  .form-group.row
+                    label.col-sm-3.col-form-label Upload Gallery Images
+                    input.file-upload-default(type='file' name='mainImg' multiple accept='image/*')
+                    .col-sm-9.d-flex.align-items-center
+                      input.form-control.file-upload-info(type='text' disabled placeholder='Upload main Images')
+                      span.input-group-append.ms-2
+                        button.file-upload-browse.btn.btn-primary(type='button') Upload Images
+
+              tr
+                td=`Related Images`
+                td
+                  each img in data.relatedImages
+                    .d-flex.align-items-center.mb-2
+                      img(src=`/images/${img}` class='me-2' style='width: 100px; height: 100px; object-fit: cover;')
+                      button.btn.btn-danger.btn-sm.delete-image(data-image=`${img}`) Delete
+                  .form-group.row
+                    label.col-sm-3.col-form-label Upload Gallery Images
+                    input.file-upload-default(type='file' name='relatedImages' multiple accept='image/*')
+                    .col-sm-9.d-flex.align-items-center
+                      input.form-control.file-upload-info(type='text' disabled placeholder='Upload Gallery Images')
+                      span.input-group-append.ms-2
+                        button.file-upload-browse.btn.btn-primary(type='button') Upload Images
+
+          button.btn.btn-primary.me-2 Save Data
+          button.btn.btn-dark Cancel                  
+
+
+
+
+
+

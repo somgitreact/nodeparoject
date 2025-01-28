@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rptBox{ border: 1px solid red; padding: 10px; margin: 10px;}
+    </style>
+</head>
+<body>
+    
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label" for="exampleInputUsername2">Faq</label>
+        <div class="col-sm-9">
+            <div class="wrpdocument">
+                <div class="rptBox">
+                    <input class="form-control" type="text" name="careQ-1" placeholder="add questation" />
+                    <input class="form-control" type="text" name="careA-1" placeholder="add answer" />
+                    <button class="btn btn-primary me-2 add" id="add-1">add new field</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="wrpdocument">
+        <div class="rptBox">
+            <input type="text" name="careQ-1" placeholder="add questation" />
+            <input type="text" name="careA-1" placeholder="add answer" />
+            <button  class="btn btn-primary me-2 add" id="add-1">add new field</button>
+        </div>
+    </div>
+
+<!-- 
+<script>
+ let btnAdd = document.querySelector('.add');
+ let wrpBox = document.querySelector('.wrpdocument');
+ 
+ btnAdd.addEventListener('click', function(e){
+e.preventDefault();
+let chngId = (this.id).split('-')[1]
+alert(this.id)
+wrpBox.insertAdjacentHTML("afterend",`<div class="rptBox">
+            <input type="text" name="careQ1" placeholder="add questation" />
+            <input type="text" name="careA1" placeholder="add answer" />
+            <button class="add" id="add-${chngId*1 + 1}">add new field</button>
+        </div>`)
+        this.parent().insertAdjacentHTML("afterend", `<button class="delete" id="del-${chngId}">delete field</button>`)
+        this.remove()
+ })
+</script> -->
+<!-- <script>
+    let wrpBox = document.querySelector('.wrpdocument');
+
+    // Event delegation to handle dynamically added buttons
+    wrpBox.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Handle Add button
+        if (e.target.classList.contains('add')) {
+            let chngId = e.target.id.split('-')[1];
+            let nextId = parseInt(chngId) + 1;
+
+            // Add new input fields
+            let newFieldHTML = `
+                <div class="rptBox">
+                    <input type="text" name="careQ-${nextId}" placeholder="add question" />
+                    <input type="text" name="careA-${nextId}" placeholder="add answer" />
+                    <button class="delete" id="del-${nextId}">Delete Field</button>
+                </div>`;
+            
+            e.target.parentNode.insertAdjacentHTML("afterend", newFieldHTML);
+
+            // Move the "Add" button to the new last field
+            e.target.id = `add-${nextId}`;
+            e.target.parentNode.nextElementSibling.appendChild(e.target);
+        }
+
+        // Handle Delete button
+        if (e.target.classList.contains('delete')) {
+            let parentBox = e.target.parentNode;
+            parentBox.remove();
+
+            // Ensure the "Add" button remains in the last field
+            let allBoxes = wrpBox.querySelectorAll('.rptBox');
+            if (allBoxes.length > 0) {
+                let lastBox = allBoxes[allBoxes.length - 1];
+                let existingAddButton = lastBox.querySelector('.add');
+
+                if (!existingAddButton) {
+                    // Determine the appropriate ID for the "Add" button
+                  //  let addId = allBoxes.length;
+                    lastBox.insertAdjacentHTML(
+                        "beforeend",
+                        `<button class="add" id="add-${addId}">Add New Field</button>`
+                    );
+                }
+            }
+        }
+    });
+</script> -->
+
+<script>
+    let wrpBox = document.querySelector('.wrpdocument');
+
+    // Event delegation to handle dynamically added buttons
+    wrpBox.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Handle Add button
+        if (e.target.classList.contains('add')) {
+            let chngId = e.target.id.split('-')[1];
+            let nextId = parseInt(chngId) + 1;
+
+            // Add new input fields
+            let newFieldHTML = `
+                <div class="rptBox">
+                    <input type="text" name="careQ-${nextId}" placeholder="add question" />
+                    <input type="text" name="careA-${nextId}" placeholder="add answer" />
+                    <button  class="btn btn-danger me-2 delete" id="del-${nextId}">Delete Field</button>
+                </div>`;
+            
+            e.target.parentNode.insertAdjacentHTML("afterend", newFieldHTML);
+
+            // Move the "Add" button to the new last field
+            e.target.id = `add-${nextId}`;
+            e.target.parentNode.nextElementSibling.appendChild(e.target);
+        }
+
+        // Handle Delete button
+        if (e.target.classList.contains('delete')) {
+            let delId = parseInt(e.target.id.split('-')[1]);
+            let parentBox = e.target.parentNode;
+            parentBox.remove();
+
+            // Reassign IDs for remaining fields
+            let allBoxes = Array.from(wrpBox.querySelectorAll('.rptBox'));
+            allBoxes.forEach((box, index) => {
+                let newId = index + 1;
+
+                // Update input names
+                let inputs = box.querySelectorAll('input');
+                inputs[0].name = `careQ-${newId}`;
+                inputs[1].name = `careA-${newId}`;
+
+                // Update delete button ID
+                let deleteBtn = box.querySelector('.delete');
+                if (deleteBtn) {
+                    deleteBtn.id = `del-${newId}`;
+                }
+
+                // Update add button ID
+                let addBtn = box.querySelector('.add');
+                if (addBtn) {
+                    addBtn.id = `add-${newId}`;
+                }
+            });
+
+            // Ensure "Add" button is only in the last field
+            if (allBoxes.length > 0) {
+                let lastBox = allBoxes[allBoxes.length - 1];
+                if (!lastBox.querySelector('.add')) {
+                    lastBox.insertAdjacentHTML(
+                        "beforeend",
+                        `<button class="add btn btn-primary me-2" id="add-${allBoxes.length}">Add New Field</button>`
+                    );
+                }
+            }
+        }
+    });
+
+
+    let inputs = document.querySelector('.rptBox').querySelectorAll('input');
+
+    const inputFaq = [inputs[0].name = `careQ-${newId}` , inputs[1].name = `careA-${newId}`];
+
+    console.log( ...inputFaq);
+    
+
+
+
+
+</script>
+
+</body>
+</html>
